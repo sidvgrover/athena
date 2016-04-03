@@ -1,0 +1,41 @@
+----------------------
+INFO FOR CS CLASSES
+----------------------
+ALL OF KEITH'S OLD WEBSITES WORKS ON CS103
+http://www.stanford.edu/class/archive/cs/....
+API = "CS103"
+http://www.keithschwarz.com/cs106l/....
+API = "CS106L"
+
+ALL THE CS WEBSITES SEEM TO WORK WITH CS103 EXCEPT FOR CS106B AND CS110
+http://web.stanford.edu/class/cs106b/
+API = "CS106B"
+http://web.stanford.edu/class/cs110/winter-2015/
+API = "CS110"
+!ELSE!
+http://web.stanford.edu/class/cs...
+API = "CS103"
+
+This list includes:
+http://web.stanford.edu/class/cs103/
+http://web.stanford.edu/class/cs106a/
+http://web.stanford.edu/class/cs106l/
+http://web.stanford.edu/class/cs166/
+
+This list does not work for the current version of:
+CS 161 - Announcements are posted on Piazza, not on website
+CS 143 - Announcements are posted on Piazza, not on website
+----------------------
+INFO FOR PWR CLASSES
+----------------------
+https://rhetoricofgaming.wordpress.com/blogging/page/4/
+Works pretty well, is the only PWR class that works
+----------------------
+INFO FOR CME CLASSES
+----------------------
+CME updates are taken from Piazza, there is no course website
+----------------------
+CLASSES THAT HAVE PIAZZA LINKS ON MY ACCOUNT:
+CS110
+CME102
+CS103

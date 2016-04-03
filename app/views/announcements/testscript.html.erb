@@ -1,0 +1,8 @@
+<% @courses.each do |course| %>
+	<p><%= course.name %> Announcements:</p>
+	<ul>
+		<% course.updates.each do |update| %>
+			<li><%= update.body %></li>
+		<% end %>
+	</ul>
+<% end %>

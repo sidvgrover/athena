@@ -1,0 +1,36 @@
+AnnouncementBody
+	Description
+	Link
+AnnouncementHeader
+	Header
+AnnouncementDate
+	Date
+CourseReaderLink
+SyllabusLink
+OfficeHoursCalendarLink
+
+CS106B AnnouncementHeader starts at 1 not 0, 0 says announcements
+
+CS 103: gmto6p50gjai5j1e52n8g46a7o@group.calendar.google.com
+CS 106A
+CME 102: 
+CS 110: qgcnvdut0fioke7s0atp9no84k@group.calendar.google.com
+Stats 116:
+
+
+-------------
+Courses that Work:
+http://www.keithschwarz.com/ //everything on keith's website works on CS103
+	CS 103 - Piazza Additionally
+	CS 106A
+	CS 106B - Look at note about AnnouncementHeader
+	CS 106L - Seperate API
+	CS 166
+	CS 161
+	CS 143
+CS 110 By Cain - Piazza Additionally
+CME 102: Piazza Only
+PWR 1 (Rhetoric of Gaming): Works for only post grabbing, site does not contain exams or homework
+
+------------
+If a course is run by keithschwarz.com

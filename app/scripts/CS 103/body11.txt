@@ -1,0 +1,6 @@
+Video and notes will be posted to the class site.
+
+To clarify a few things that came up during the exam:
+In relations, symmetry does not imply reflexivity, but in the definition $$x$$ and $$y$$ need not be different. All symmetry is saying is that if $$xRy$$, then $$yRx$$. Thus, if $$xRx$$, then $$xRx$$. But $$\neg xRx$$ may also be true (i.e. there is nothing saying that because $$R$$ is symmetry elements have to relate to themselves.)There was a question about a relation being both symmetric and antisymmetric. The relation $$=$$ is in fact, both symmetric and antisymmetric, and the relation I was trying to draw on the board (where elements all have self loops) is exactly the equality relation. Another example would be the empty relation (vacuously), because the antecedent in both conditions will always be false.
+
+There was one or two typographical errors in the slides and Ive fixed them in what is posted. Let me know if you have any other questions / find any issues.

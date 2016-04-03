@@ -1,0 +1,5 @@
+Hello wonderful CS103 students!
+
+Take a look at the course page when you get a chance. There are a two handouts posted about proofs. One is a very good comprehensive reference for how to write good, correct proofs. The other highlights some of the pitfalls that many budding mathematicians fall into when learning to write proofs. These will be VERY HELPFUL for Homework 3, as we will be grading your proofs for correctness and style.
+
+Let us know if you have any questions and have a great rest of your weekend!

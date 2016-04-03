@@ -1,0 +1,6 @@
+When you are submitting on Scoryst, please verify the following:
+
+Make sure your submission is legible. Please take clear pictures of each page or (preferably) use a Scanner. There are a number of good scanner apps, as well. (https://www.camscanner.com/)Make sure that your submissions are reasonably sized. There is really no need for your pdf to exceed 5 MB. If you need to compress your pdf, here are some resources.
+Mac: open the PDF in Preview, go to File - Export, then set the Quartz Filter to Reduce File Size and additionally Black and White if necessary.Windows: PrimoPDF (http://www.primopdf.com/),a PDF printer with compression options.Linux/Mac/Windows:Ghostscript (see the second answer inhttp://askubuntu.com/questions/113544/how-to-reduce-pdf-filesize)
+
+Moving forward, we will not grade problem sets if they are illegible or Scoryst cannot easily load them due to file size.

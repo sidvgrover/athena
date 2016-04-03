@@ -1,0 +1,127 @@
+<% content_for :head do %>
+<%= stylesheet_link_tag "announcements" %>
+<% end %>
+
+<div id="sidebar">
+
+	<a href="/">
+		<%= image_tag "AthenaLogo2.png", :class => "athena_logo" %>
+	</a>
+
+	<div id="enroll">
+    	<a id="enroll_button" href="#myModal" class="btn btn-lg" data-toggle="modal">Enroll</a>
+	</div>
+	
+	<% Course.all.each do |course| %>
+	<div class="class_tab">
+		<div class="class_name"><%= course.name %></div>
+		<div class="color_strip"></div>
+		<div class="hidden_color" style="display: none;"><%= course.color %></div>
+	</div>
+	<% end %>
+
+	<div id="piazza">
+    	<a id="piazza_button" class="btn btn-lg">Piazza</a>
+	</div>
+
+</div>
+
+<div id="content">
+<div class="container-fluid">
+	<div style="height: 20px;"></div>
+	<div class="row" class>
+		<!-- TOPBAR ROW -->
+		<div class="col-md-2"></div>
+
+		<div class="col-md-2">
+			<!-- <div class="btn-group" role="group" aria-label="...">
+              <button id="lists" type="button" class="btn btn-default disabled">List</button>
+              <button id="calendar" type="button" class="btn btn-default">Calendar</button>
+            </div> -->
+			<select class="form-control" id="dropdown_filter">
+            	<option value="all">All</option>
+            	<option value="homework">Homeworks</option>
+            	<option value="exam">Exams</option>
+            	<option value="piazza">Piazza</option>
+            </select>
+		</div>
+		<div class="col-md-8"></div>
+	<div style="height: 70px;"></div>
+	</div>
+	<div class="row">
+		<div class="col-md-2"></div>
+		<div class="col-md-8">
+				<% Update.all.order(:date).reverse_order.each do |update| %>
+					<% tags = "" %>
+					<% if update.isHW %>
+						<% tags += " homework" %>
+					<% elsif update.isExam %>
+						<% tags += " exam" %>
+					<% elsif update.isPiazza %>
+						<% tags += " piazza" %>
+					<% end %>
+					<% tags = "post_box" + tags %>
+					<div class="<%= tags %>">
+						<span class="title">
+							<span class="header"><%= update.course.name %></span> <%= update.title %>
+							<% if update.isPiazza %>
+								<div class="piazza_logo"><%= image_tag "piazza_logo.gif" %></div>
+							<% end %>
+						</span>
+						<% if update.date != nil %>
+						<span class="date"><%= update.date.strftime("%B %d, %Y") %></span>
+						<% end %>
+						<p class="body"><%= update.body %></p>
+						<div class="hidden_color_update" style="display: none;"><%= update.course.color %></div>
+					</div>
+				<% end %>
+		</div>
+		<div class="col-md-2"></div>
+	</div>
+</div>
+ </div>
+
+    <!-- Modal HTML -->
+    <div id="myModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Enroll in a Course</h4>
+                </div>
+                <div class="modal-body">
+                     <form class="form-horizontal">
+                        <div class="form-group">
+                        <label for="courseName" class="col-sm-2 control-label">Course</label>
+                        <div class="col-sm-10">
+                        <input type="text" class="form-control" id="courseName" placeholder="Enter Course Name">
+                        </div>
+                        </div>
+                    </form>
+
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                        <label for="courseID" class="col-sm-2 control-label">URL</label>
+                        <div class="col-sm-10">
+                        <input type="url" class="form-control" id="courseID" placeholder="Enter Course URL">
+                        </div>
+                        </div>
+                    </form>
+
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                        <label for="courseColor" class="col-sm-2 control-label">Color</label>
+                        <div class="col-sm-10">
+                        <input type="text" class="form-control" id="courseColor" placeholder="Enter Course Color">
+                        </div>
+                        </div>
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    <button id="submit" type="button" class="btn btn-primary" data-dismiss="modal">Enroll</button>
+                </div>
+            </div>
+        </div>
+    </div>

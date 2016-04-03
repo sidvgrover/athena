@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8' />
+<link href='fullcalendar.css' rel='stylesheet' />
+<link href='fullcalendar.print.css' rel='stylesheet' media='print' />
+<script src='lib/moment.min.js'></script>
+<script src='lib/jquery.min.js'></script>
+<script src='fullcalendar.min.js'></script>
+<script src='gcal.js'></script>
+<script>
+	var newEntry = [{title: 'test title', start: '2/5/2015', color: '#f1c40f'}];
+	$(document).ready(function() {
+	
+		$('#calendar').fullCalendar({
+			header: {
+				left: 'prev,next today',
+				center: 'title',
+				right: 'month,agendaWeek,agendaDay'
+			},
+			defaultDate: '2015-02-12',
+			editable: true,
+			eventLimit: true, // allow "more" link when too many events
+
+			googleCalendarApiKey: 'AIzaSyAhBLKkicM6Zfu6ai0IZYDEdVIDkaEKjGo',
+			
+			// US Holidays
+			eventSources: [
+	            {
+	                googleCalendarId: 'gmto6p50gjai5j1e52n8g46a7o@group.calendar.google.com',
+	                className: 'CS 103',
+	                color: '#e74c3c' //we have to get the HEX codes from the class color
+	            },
+	            {
+	                googleCalendarId: 'qgcnvdut0fioke7s0atp9no84k@group.calendar.google.com',
+	                className: 'CS 110',
+	                color: '#bdc3c7'
+
+	            }
+        	],
+			//events: 'usa__en@holiday.calendar.google.com',
+			
+			eventClick: function(event) {
+				// opens events in a popup window
+				window.open(event.url, 'gcalevent', 'width=700,height=600');
+				return false;
+			},
+			
+			loading: function(bool) {
+				$('#loading').toggle(bool);
+			}
+		});
+
+		$('#calendar').fullCalendar('addEventSource', newEntry);
+	});
+</script>
+<style>
+
+	body {
+		margin: 40px 10px;
+		padding: 0;
+		font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+		font-size: 14px;
+	}
+		
+	#loading {
+		display: none;
+		position: absolute;
+		top: 10px;
+		right: 10px;
+	}
+
+	#calendar {
+		max-width: 900px;
+		margin: 0 auto;
+	}
+
+</style>
+</head>
+<body>
+
+	<div id='loading'>loading...</div>
+
+	<div id='calendar'></div>
+
+</body>
+</html>

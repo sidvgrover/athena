@@ -1,0 +1,9 @@
+This is a problem that we have seen with a number of students. If your code is failing the test randomly even when you use a clean copy of assign2 with your unmodified assign1 code, then this is probably the reason:
+
+char delimiter = /;
+token = strsep(path, delimiter);
+If the code above looks familiar, then your assign1 has a serious bug that is not caught by the assign1 test cases. You need to change it to this:
+
+char *delimiter = /;
+token = strsep(path, delimiter);
+The reason for this is because strsep is expecting not just anychar * pointer for its second argument. It is specifically expecting a null-terminated C string. By passing in the pointer to a regular char, the code is potentially interpreting a huge chunk of memory as delimiter characters.

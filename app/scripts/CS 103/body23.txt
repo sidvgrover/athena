@@ -1,0 +1,9 @@
+Im afraid students will be confused about this, so I wanted to clarify it.
+
+I made a big point in my lectures that you probably dont want to say $$\exists \ldots \to \ldots$$.
+
+Thats perfectly legal first-order logic which has a well-defined meaning. But, if you are trying to express a concept, thats probably not going to be what you mean.
+
+However, in the blocks world problems, we *might* have assigned some problems where we wanted you to understand the specifics of what $$\exists \ldots \to \ldots$$ mean, so you *might* have to write a formula like that.
+
+In such a case, you would *not* be trying to translate math or English into an understandable logic formula. You would be meeting the technical requirements of the problem, and showing that you know how to think about logical formulas, even weird ones.

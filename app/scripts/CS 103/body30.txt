@@ -1,0 +1,10 @@
+Some students are approaching problem 3 like this:
+1. Figure out the answer to the problem, somehow.
+2. Try to write a logical formula that captures the results.
+
+That is not the intended approach. The intended approach is:
+1. Translate the statement of the problem to logic, without thinking about what the result will be.
+2.  Build a truth table and read off the answer.
+3.  Check your answer by thinking about the problem in other ways.
+
+The goal is to get a little practice translating a problem to logic -- not translating the SOLUTION to logic -- and to automate part of the solution to the problem.

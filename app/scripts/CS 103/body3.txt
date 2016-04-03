@@ -1,0 +1,7 @@
+During my office hours, I found that 5c seemed a little hard, so I thought I would try to give some hints before the homework is due.
+
+1. The easiest method for me to solve it was to build a DFA for this language, then extract a regular expression from that. I planned to talk about the general method for doing that in Wednesdays lecture, but didnt get to it. However, it is posted in the notes.  The general method is very inefficient, but, in this case, it works like a charm.
+
+2. Another route to a solution is: Try solving a smaller instance of the problem. What if you have a leash of length 1 instead of length 2? After you solve that, you can think along the following lines: Suppose you take a step, so youre one step ahead of the dog.  To return to being 0 steps ahead of the dog after you take one step, you and the dog can take any steps that leave you AT LEAST one step ahead, then the dog can take a step to catch up with you.  Alternatively, the dog could get ahead of you one step, and youd have the symmetric regular expression to get back to 0 steps. Now you can combine those expressions into one that covers all the possibilities.
+
+I hope that helps. If you managed to solve the problem without these hints, my congratulations to you! If not, I hope this saves you some frustration.

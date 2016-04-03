@@ -1,0 +1,126 @@
+* {
+	box-sizing: border-box;
+}
+
+#sidebar {
+	color: white;
+    background-color: #808080;
+	display: inline-block;
+	height: 100%;
+	position: fixed;
+	width: 290px;
+}
+
+#content {
+    display: inline-block;
+	height: 100%;
+	padding-left: 290px;
+	width: 100%;
+}
+
+#enroll {
+	margin: 30px 33% 30px 33%;
+	border-radius: 5px;
+}
+
+#enroll_button {
+	background-color: #404040;
+	color: white;
+	font-weight: bolder;
+}
+
+#piazza {
+	margin: 30px 33% 30px 33%;
+	border-radius: 5px;
+}
+
+#piazza_button {
+	background-color: #587C9F;
+	color: white;
+	font-weight: bolder;
+}
+
+.athena_logo {
+	width: 250px;
+	height: 60px;
+	margin: 30px 20px 5px 20px;
+}
+
+.class_tab {
+	width: 100%;
+	height: 70px;
+	transition: all .3s ease-in-out;
+	background-size: 200% 100%;
+	background-position:left bottom;
+}
+
+.class_name {
+	width: 260px;
+	height: 70px;
+	float: left;
+	font-family: HelveticaNeue, Helvatica;
+	padding: 25px 40px;
+	font-size: 16px;
+}
+
+.color_strip {
+	background-color: transparent;
+	width: 13px;
+	height: 70px;
+	float: right;
+	transition: all .15s ease-in-out;
+}
+
+.class_tab:hover .color_strip{
+	width: 30px;
+}
+
+.class_tab:hover {
+	/*background-color: #727272;*/
+	cursor: pointer;
+}
+
+.clear {
+	clear: both;
+}
+
+.post_box{
+	margin: 20px 0;
+	padding: 15px 35px;
+	border-radius: 4px;
+	box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, .15);
+}
+
+.piazza_logo {
+	float: right;
+}
+
+.piazza_logo img {
+	height: 15px;
+	width: 60px;
+}
+
+.header {
+}
+
+.title {
+	font-size: 28px;
+	font-weight: bolder;
+	display: block;
+}
+
+.date {
+	color: #838383;
+	font-family: Helvetica;
+	font-size: 15px;
+	margin: 5px 10px 20px 5px;
+}
+
+.body {
+	margin-top: 20px;
+	font-size: 17px;
+}
+
+.hidden{
+	display: none;
+}

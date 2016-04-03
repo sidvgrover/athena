@@ -1,0 +1,1 @@
+I promised everyone a short handout outlining some of the common, easily corrected Assignment 1errors Ive seen in prior CS110 offerings. Ive compiled a list of them, and Ive put that list right here.

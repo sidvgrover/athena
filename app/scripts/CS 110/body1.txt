@@ -1,0 +1,11 @@
+Everyone,
+
+Some C shared libraries were offline this morning, and as a result I was silent on the topic of Assignment 4 during todays lecture, just in case they didnt come back before the end of the day. The shared libraries (the ones that providesome threading support) are back online, so Ive gone ahead and released Assignment 4 and updated todays slide deck to reflect its release.
+
+Since Stanford is observing the Presidents Day holiday, we wont be holding lecture on Monday, nor will we be holding office hours on Sunday night. (We will, however, be holding office hours on Monday night and Tuesday all day, as usual.)
+
+Finally, a former CS110 CAAshwin Siripurapuhas agreed to lead a miniature C review session on Tuesday, February 17th at 7:00 p.m., tentatively at Braun Auditorium. Hell be reviewing core parts of this slide deck, which I assembled the first quarter I taught CS110.
+
+Thanks, and have a great holiday weekend.Jerry
+
+#pin
